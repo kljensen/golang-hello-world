@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
-    "os"
+	"os"
 )
 
 func getEnv(key string, fallback string) string {
@@ -20,4 +20,3 @@ func main() {
 
 	http.ListenAndServe(":"+getEnv("PORT", "8080"), nil)
 }
-
