@@ -17,3 +17,11 @@ pull it with
 ```
 docker pull yellowtrex/golang-hello-world
 ```
+
+Running the docker image
+
+```
+docker run -p 127.0.0.1:8080:8080/tcp yellowtrex/golang-hello-world
+```
+
+Then, visit [http://localhost:8080](http://localhost:8080).
